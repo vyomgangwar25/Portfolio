@@ -14,9 +14,9 @@
           <ul>
             <li><a href="">Home</a></li>
             <li>
-              <a href=""><li>About</li></a>
+              <a href="#about"><li>About</li></a>
             </li>
-            <li><a href="">Projects</a></li>
+            <li><a href="#portfolio">Projects</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </div>
@@ -29,8 +29,10 @@
           <span class="purple"> Vyom </span>
            <span id="element"></span>
           <div class="buttons">
-             <button class="btn">Download Resume</button>
-             <button class="btn">Visit Github</button>
+             <button class="btn" > <a href="Images/Vyom-Resume.pdf" download="Vyom-Resume.pdf">Download Resume</a></button>
+              
+             <button class="btn" >
+                <a href="https://github.com/vyomgangwar25">Visit Github</a></button>
           </div>
         </div>
         <div class="rightSection">
@@ -40,16 +42,58 @@
       <section class="secondsection "></section>
     </main>
 
-/*-------ABOUT------*/
-    <div class="about">
+ 
+    <div id="about">
        <div class="container">
         <div class="row">
             <div class="about-col2">
-                <h1>About Me</h1>
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet nesciunt ut alias non veniam modi incidunt commodi id quibusdam quos, animi eum quidem molestias nostrum laudantium. Eligendi, inventore. Provident?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi eum dolorem? Ullam molestiae minus tempore accusantium tempora voluptatibus voluptatem mollitia quaerat quasi fugiat at ipsa iure dolor, labore eos.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="Education">
+                    <ul>
+                        <li><span>Bachelor’s of Technology(Information Technology)</span><br>ABES ENGINEERING
+                            COLLEGE <br>2020-2024</li>
+                        <li><span>Intermediate</span><br>C.P. Vidya Niketan,
+                            Kaimganj <br>
+                            2018 - 2019</li>
+                            <li><span>High School</span><br>C.P. Vidya Niketan,
+                                Kaimganj <br>
+                                2016 - 2017</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Skills">
+                    <ul>
+                        <li><span>PROGRAMMING</span><br>JAVA,javascript,React.js</li>
+                        <li><span>Familiar</span><br>Data Structure and Algorithm,OOPS,SQL</li>
+                        <li><span>Tools</span><br>VsCode,Git and Gtihub</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>cp vidya niketan</span><br>kaimganj</li>
+                        <li><span>abes</span><br>ghaziabad</li>
+                    </ul>
+                </div>
             </div>
         </div>
        </div>
     </div>
+
+
+   <!------project---->
+   <div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list"></div>
+     </div>
+   </div>
 
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -58,6 +102,22 @@
         strings: [" and I am a Passionate web Developer "],
         typeSpeed: 50,
       });
+
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontent=document.getElementsByClassName("tab-content")
+      function opentab(tabname)
+      {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcont of tabcontent)
+        {
+            tabcont.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
   </body>
 </html>
