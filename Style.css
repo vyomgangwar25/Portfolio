@@ -9,12 +9,16 @@ body{
     background-color: rgb(0, 0, 33);
     color: white;
     font-family: 'Poppins', sans-serif;
+     
+      
+   
 }
 nav{
     display: flex;
     justify-content: space-around;
     height: 80px;
     background-color:rgb(18, 18, 62);
+    z-index: 1; 
 }
 nav div{
     margin: 23px 0;
@@ -53,7 +57,7 @@ nav ul li a:hover{
     font-size: 3rem; 
       
 }
-.leftSection buttons{
+.leftSection .buttons{
     padding: 50px 0;
 }
 .leftSection  .btn{
@@ -82,15 +86,21 @@ main section a{
 
 
 /*-----ABout-----*/
-.about{
-    padding: 80px 0;
-    color: #ababab;
-    border: 2px solid red;
+#about{
+     color: #ababab;
+     height: 100vh;
+    background-color:rgb(3, 3, 55);
+}
+.about-col2{
+    width: 100%;
+    height: 100%;
 }
 .sub-title{
-    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size:40px;
     font-weight:600 ;
-    color: #fff;
+    color: rgb(15, 125, 145);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +132,11 @@ main section a{
 }
 .tab-content ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
+   
+}
+.tab-content.tab-links.ll{
+    padding-bottom: 45px ;
 }
 .tab-content ul li span{
     color: #b54769;
@@ -137,5 +151,148 @@ main section a{
 
 /*-----Portfolio-----*/
 #Portfolio{
+    height: 100%;
     padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+ 
+#project-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
+}
+
+.project {
+    background-color:whitesmoke;
+     
+    margin: 20px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color:rgb(79, 81, 209);
+}
+
+.project img {
+    max-width: 90%;
+    height: 25vh;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.project p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: rgb(12, 83, 104)
+}
+
+.project a {
+    display: block;
+    background-color: rgb(12, 104, 90);
+    color: white;
+   font-size: 15px; 
+   border: 2px solid white;
+   border-radius: 6px;
+   cursor: pointer;
+   padding: 12px;
+   text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.project a:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*-----Contact-----*/
+#Con{
+ 
+    background-color:rgb(3, 3, 55);
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+ 
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 120px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+  #x{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition:0.3s ease ;
+}
+button:hover{
+    background-color: #45a049;
+}
+.Contact-info{
+    text-align: left;
+}
+.Contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.Contact-info p{
+    margin-bottom: 10px;
+    color: #555;
+}
+.Contact-info i{
+    color: #4caf50;
+    margin-right: 10px;
+}
+ 
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+

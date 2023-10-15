@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="left">Vyom</div>
+        <img src="Images/portfolio.png" alt="Project 2 Image">
         <div class="right">
           <ul>
             <li><a href="">Home</a></li>
             <li>
               <a href="#about"><li>About</li></a>
             </li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#a">Projects</a></li>
+            <li><a href="#Con">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -47,14 +48,14 @@
        <div class="container">
         <div class="row">
             <div class="about-col2">
-                <h1 class="sub-title">About Me</h1>
+                <h2 class="sub-title">About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet nesciunt ut alias non veniam modi incidunt commodi id quibusdam quos, animi eum quidem molestias nostrum laudantium. Eligendi, inventore. Provident?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi eum dolorem? Ullam molestiae minus tempore accusantium tempora voluptatibus voluptatem mollitia quaerat quasi fugiat at ipsa iure dolor, labore eos.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
                     <p class="tab-links" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links ll" onclick="opentab('Experience')">Experience</p>
                 </div>
                 <div class="tab-content active-tab" id="Education">
                     <ul>
@@ -63,7 +64,7 @@
                         <li><span>Intermediate</span><br>C.P. Vidya Niketan,
                             Kaimganj <br>
                             2018 - 2019</li>
-                            <li><span>High School</span><br>C.P. Vidya Niketan,
+                            <li style="padding-bottom: 45px;"><span>High School</span><br>C.P. Vidya Niketan,
                                 Kaimganj <br>
                                 2016 - 2017</li>
                     </ul>
@@ -72,13 +73,13 @@
                     <ul>
                         <li><span>PROGRAMMING</span><br>JAVA,javascript,React.js</li>
                         <li><span>Familiar</span><br>Data Structure and Algorithm,OOPS,SQL</li>
-                        <li><span>Tools</span><br>VsCode,Git and Gtihub</li>
+                        <li style="padding-bottom: 45px"><span>Tools</span><br>VsCode,Git and Gtihub</li>
                     </ul>
                 </div>
                 <div class="tab-content" id="Experience">
                     <ul>
                         <li><span>cp vidya niketan</span><br>kaimganj</li>
-                        <li><span>abes</span><br>ghaziabad</li>
+                        <li style="padding-bottom: 45px"><span>abes</span><br>ghaziabad</li>
                     </ul>
                 </div>
             </div>
@@ -88,12 +89,65 @@
 
 
    <!------project---->
-   <div id="portfolio">
-     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list"></div>
-     </div>
-   </div>
+ 
+   <section id ="a" >
+    <h1 id="Portfolio">Projects</h1>
+   <section id="project-section">
+    <div class="project">
+        <h2>Tasty Tales</h2>
+        <img src="Images/p1.png" alt="Project 2 Image">
+        <p>Description of Project 2 goes here.</p>
+        <button class="btnn" >
+            <a href=" https://vyomgangwar25.github.io/FoodWebsite/">View Project</a></button>
+    </div>
+    <div class="project">
+        <h2 id="pro">Prime Beats</h2>
+        <img src="Images/p2.png" alt="Project 2 Image">
+        <p>Description of Project 2 goes here.</p>
+        <button class="btnn" >
+            <a href="https://vyomgangwar25.github.io/Music-App/">View Project</a></button>
+    </div>
+    <div class="project">
+        <h2>E-Commerce Website</h2>
+        <img src="Images/p3.png" alt="Project 2 Image">
+        <p>Description of Project 2 goes here.</p>
+        <button class="btnn" >
+            <a href="https://vyomgangwar25.github.io/E-COMMERCE-WEB/">View Project</a></button>
+    </div>
+
+</section> 
+</section>
+    
+   <!------Contact---->
+   <section id="Con" >
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+            <div class="Contact-form">
+                <h3>Send us a message</h3>
+                <form action="">
+                    <div class="form-group">
+                         <input type="text" name="name" value="name" placeholder="Your Name"> 
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message"  placeholder="Your message" cols="30" rows="10"></textarea>
+                    </div>
+                  <button id="x" type="submit">Send message</button>
+                </form>
+            </div>
+            <div class="Contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i>+91 7355419056</p>
+                <p><i class="fas fa-envelope"></i>info@exmaple.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>123,street,city</p>
+            </div>
+        </div>
+    </div>
+      
+   </section>
 
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
